@@ -28,7 +28,7 @@ def select_series_title_with_most_human_characters
   JOIN character_books
   ON character_books.books_id = books.id
   JOIN characters
-
+  ON character_books.character_id = characters.id;
   "
 end
 
